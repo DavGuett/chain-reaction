@@ -21,11 +21,11 @@
 </head>
 <body>
     <header class="bg-asphalt text-chalk-white shadow-md">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
             <div class="flex items-center justify-between h-16">
 
                 <!-- Brand -->
-                <a href="{{ url('/') }}" class="flex items-center gap-2 shrink-0">
+                <a href="{{ url('/') }}" class="flex items-center gap-2 shrink-0" aria-label="Home">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <circle cx="18.5" cy="17.5" r="3.5"/>
                         <circle cx="5.5" cy="17.5" r="3.5"/>
