@@ -1,5 +1,14 @@
 <x-app>
-    <div class="mx-auto mt-10 w-full max-w-md px-4">
+    <div class="mx-auto mt-10 w-full max-w-md p-4 bg-asphalt text-chalk-white">
+        <div class="flex gap-5 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18.5" cy="17.5" r="3.5"/>
+                <circle cx="5.5" cy="17.5" r="3.5"/>
+                <circle cx="15" cy="5" r="1"/>
+                <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+            </svg>
+            <span class="font-barlow text-5xl font-bold tracking-wide uppercase">{{ config('app.name', 'Chain Reaction') }}</span>
+        </div>
         <h1 class="mb-6 text-2xl font-semibold">Log in</h1>
 
         @if (session('status'))
@@ -65,7 +74,7 @@
                     </a>
                 @endif
 
-                <button type="submit" class="rounded bg-gray-900 px-4 py-2 text-sm font-medium text-white">
+                <button type="submit" class="rounded bg-signal-orange px-4 py-2 text-sm font-medium">
                     Log in
                 </button>
             </div>
